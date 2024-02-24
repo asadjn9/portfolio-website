@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBrilliance</title>
+  <style>
+    /* CSS for header navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: teal;
+      color: #fff;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px; /* Add padding to make the clickable area larger */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+
+/* CSS for table */
+table {
+      border-collapse: collapse;
+      width: 100%; /* Set the width to 100% to make it responsive */
+    }
+    th, td {
+      border: 1.5px solid rgb(157, 172, 202); /* Add border to cells */
+      padding: 8px; /* Add padding to cells */
+      text-align: left; /* Align text to the left */
+    }
+    th {
+      background-color: rgb(142, 161, 161); /* Background color for header cells */
+    }
+    td {
+      background-color: rgb(214, 231, 231); /* Alternate row background color */
+    }
+    nav ul li a[href="index.html"] { background-color: #1796e5; }
+  nav ul li a[href="education.html"] { background-color: #0c2636; }
+  nav ul li a[href="projects.html"] { background-color: #1796e5; }
+  nav ul li a[href="skills.html"] { background-color: #1796e5; }
+  nav ul li a[href="contact.html"] { background-color: #1796e5; }
+
+  </style>
+</head>
+<body style="background-color: aliceblue;">
+  <header>
+    <h1 style="color: white;">Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <h2><u>EDUCATION</u></h2>
+    <hr>
+
+<table>
+  <thead >
+    <tr>
+      <th>Edu_Level</th>
+      <th>School/College</th>
+      <th>City</th>
+      <th colspan="2">Year from-to </th>
+    </tr>
+  </thead>
+
+  <tbody >
+    <tr>
+      <td>SSC</td>
+      <td><abbr title="Govt High School Khall">GHS Khall</abbr></td>
+      <td>Dir L</td>
+      <td>17-19</td>
+    </tr>
+    <tr>
+      <td>HSSC</td>
+      <td><abbr title="Govt Post Graduate College Timergara">GPGC Tmg</abbr></td>
+      <td>Timergara</td>
+      <td>19-21</td>
+    </tr>
+    <tr>
+      <td>University</td>
+      <td><abbr title="Agriculture University Peshawar">AUP</abbr></td>
+      <td>Peshawar</td>
+      <td>21-25</td>
+      
+    </tr>
+
+  </tbody>
+</table>
+
+
+  </section>
+  
+</body>
+</html>

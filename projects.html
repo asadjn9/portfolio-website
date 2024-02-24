@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteBrilliance</title>
+  <style>
+    /* CSS for header navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: teal;
+      color: #fff;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 12px; /* Add padding to make the clickable area larger */
+    border-radius: 5px; /* Add border radius for rounded corners */
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th,td{
+    border: 1.5px  rgb(157, 172, 202)solid; /* Add border to cells */
+      padding: 8px; /* Add padding to cells */
+      text-align: left;
+  }
+  td{
+    background-color: rgb(214, 231, 231) ;
+  }
+  th{
+    background-color:  rgb(142, 161, 161);
+  }
+ 
+  nav ul li a[href="index.html"] { background-color: #1796e5; }
+  nav ul li a[href="education.html"] { background-color: #1796e5; }
+  nav ul li a[href="projects.html"] { background-color: #0c2636; }
+  nav ul li a[href="skills.html"] { background-color: #1796e5; }
+  nav ul li a[href="contact.html"] { background-color: #1796e5; }
+ 
+  </style>
+</head>
+
+<body style="background-color: aliceblue;">
+  <header>
+    <h1 style="color: white;">Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  
+  <section>
+    <h2>Projects</h2>
+    <hr>
+    <table>
+      <thead> 
+        <tr>
+          <th></th>
+        <th>Project</th>
+        <th>Name</th>
+        <th>about</th>
+        <th>link</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>P1</th>
+        <td>Website</td>
+        <td>Portfolio</td>
+        <td>Personal</td>
+        <td><a href="p1.html">Overview</a></td>
+      </tr>
+      <tr>
+       <th>P2</th>
+        <td>Internet of Things</td>
+        <td>Sensors</td>
+        <td>Motion sensor with light</td>
+        <td><a href="p2.html">Overview</a></td>
+      </tr>
+      <tr>
+        <th>P3</th>
+        <td>Graphic Design</td>
+        <td>Poster</td>
+        <td>Dif</td>
+        <td><a href="p3.html">Overview</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+  
+</body>
+</html>
