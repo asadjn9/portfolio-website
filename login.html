@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <style>
+
+
+    p {
+        color:blue;
+        margin: 0;
+        background-color: antiquewhite;
+        height: 20px;
+        width: 390px;
+        
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    *{
+        margin: 0;
+        padding: 0px 30px;
+        box-sizing: border-box;
+        
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        
+        align-items: center;
+
+        background-image: url(./images/loginbg.jpg);
+        min-height: 100vh;
+        
+        
+    }
+    .wrepper{
+        width: 500px;
+        
+        border-radius: 30px;
+        
+    }
+    .wrepper h1 {
+        font-size: 37px;
+        text-align: center;
+    }
+    .wrepper input {
+       
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        
+        
+
+    }
+    .input::placeholder{
+        color: white;
+    }
+    .wrepper form {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .btn button{
+        
+        stroke-width: 2px;
+        padding: 9px;
+        border-radius: 5px;
+        background-color:rgb(91, 195, 204) ;
+       
+       
+    }
+    .wrepper .details{
+        text-align: center;
+    }
+
+   
+    </style>
+</head>
+<body>
+   
+   <div class="wrepper">
+
+    <div class="details">
+    <p> Username: asadjn  &nbsp;&nbsp;&nbsp;&nbsp;  Password: asadjn99</p><br>
+    </div>
+    <form id="loginForm">
+        
+        <h1>Login</h1><br>
+        
+      
+        <input type="text" id="username" name="username" placeholder="enter username" ><img src="./images/user.png" alt="" width="20px"><br>
+    
+        <input type="password" id="password" name="password" placeholder="enter password"><img src="./images/lock.png" alt="" width="20px"><br><br>
+    <div class="btn">
+        <button> 
+            submit
+        </button>
+    </div>
+        
+    </form>
+</div>
+
+
+    <!-- written with chat -->
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Retrieve username and password
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if username and password match the desired values
+            if (username === "asadjn" && password === "asadjn99") {
+                // Redirect to index.html
+                window.location.href = "index.html";
+            } else {
+                // Handle incorrect username/password
+                alert("Incorrect username or password!");
+            }
+        });
+    </script>
+</body>
+</html>
