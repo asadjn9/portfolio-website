@@ -2,134 +2,225 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Form</title>
-    <style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+<style>
+*{
+    padding: 0;
+    margin: 0;
+}
+.asad{
+    height: 100vh;
+    width: 100%;
+    background: #edf2fc;
+    font-family: sans-serif;
+    position: relative;
+}
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20PX 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #606163;
+}
+nav ul li a:hover{
+    color: #f79420;
 
-    p {
-        color:blue;
-        margin: 0;
-        background-color: antiquewhite;
-        height: 20px;
-        width: 390px;
-        
-        justify-content: center;
-        align-items: center;
-        
-        
-    }
+}
+.information{
+    margin-left: 7%;
+    margin-top: 12%;
+}
+.information h2{
+    font-size: 75px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+span{
+    color: #f79420;
+}
+.information p{
+    color: #606163;
+    line-height: 22px;
+}
+/* resume button */
+.information a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+.image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.image img{
+    height: 100%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.image:hover .bg-shape{
+    bottom: 40px;
+}
+.image:hover .asad-pic{
+    left: 54%;
+}
 
-    *{
-        margin: 0;
-        padding: 0px 30px;
-        box-sizing: border-box;
-        
-    }
-    body{
-        display: flex;
-        justify-content: center;
-        
-        align-items: center;
+.social-media{
+    margin-left: 8%;
+    margin-top: 0px;
+}
 
-        background-image: url(./images/loginbg.jpg);
-        min-height: 100vh;
-        
-        
-    }
-    .wrepper{
-        width: 500px;
-        
-        border-radius: 30px;
-        
-    }
-    .wrepper h1 {
-        font-size: 37px;
-        text-align: center;
-    }
-    .wrepper input {
-       
-        width: 300px;
-        height: 50px;
-        margin-bottom: 10px;
-        align-items: center;
-        text-align: center;
-        border-radius: 10px;
-        
-        
+.social-media a{
+    font-size: 25px;
+    color: #f79420;
+    margin-top: 15px;
+    margin: 10px 5px;
 
-    }
-    .input::placeholder{
-        color: white;
-    }
-    .wrepper form {
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid black;
-        border-radius: 20px;
-        padding: 20px;
-    }
-    .btn button{
-        
-        stroke-width: 2px;
-        padding: 9px;
-        border-radius: 5px;
-        background-color:rgb(91, 195, 204) ;
-       
-       
-    }
-    .wrepper .details{
-        text-align: center;
-    }
+    
+}
+table{
+    
+    margin-top: 100px;
+    margin-left: 40%;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+    
+  }
 
-   
-    </style>
+.box{
+    height: 20px;
+}
+
+#submitbtn{
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #355449;
+    height: 25px;
+    width: 80px;
+
+}
+#location{
+    margin: 200px 20px;
+
+}
+
+</style>
+
 </head>
 <body>
+
+<header>
+    <div class="asad">
+        <nav>
+            <img src="./images/logo.png" alt="my_logo" class="logo" width="60PX">
+            <ul>
+                <li><a href="index1.html">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="projects.html">PORTFOLIO</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                
+            </ul>
+        </nav>
    
-   <div class="wrepper">
+     
+        <div class="information">
+            <h2>I'm <span>ASAD ULLAH</span></h2>
+            <p>
+                I'm Computer Science student at <abbr title="Agriculture University Peshawar">AUP</abbr>. I am currently diving into the world of <br> Web and Mobile App development at <abbr title="Saylani Mass IT Training">SMIT</abbr> Peshawar.
+        Alongside my studies, <br>I express my creativity as a Graphic Designer at EncoderBytes Pvt Ltd  Peshawar,<br> where I merge design with technology 
+        to craft visually engaging experiences. Moreover, <br>I have pursued specialized training in IoT through <abbr title="National Vocational & Technical Training Commission">NAVTTC</abbr>, further enriching my skill set. <br>
+        I am driven by a relentless curiosity and a desire to innovate, eager to contribute my expertise<br> to the dynamic field of technology.
+      </p>
+            
+            <a href="./pdf/mycv99.pdf">My Resume</a>
+        </div>
+        <div class="image">
+            <img src="./images/bg.png" class="bg-shape" >
+            <img src="./images/asadpic.png" class="asad-pic" >
+</header> 
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/nrkuYlYokWY?si=73K6P0bTRFKmQMuK" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>     
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/nrkuYlYokWY?si=oM0CNl4hginTREvC" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=10Dg861xJNy18dTvB6dHk9fp8dRQ&hl=en_US&ehbc=2E312F" width="300" height="200" id="location"></iframe>
 
-    <div class="details">
-    <p> Username: asadjn  &nbsp;&nbsp;&nbsp;&nbsp;  Password: asadjn99</p><br>
-    </div>
-    <form id="loginForm">
-        
-        <h1>Login</h1><br>
-        
+  <form action="contact.html">
+    <table  align="center" cellspacing="3px">
+  
+      <div>
+      <tr>
+        <td>
+          Full Name:<input type="text" placeholder="Enter Name" required></td></tr>
+      <tr>
+        <td>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="Enter Email" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" placeholder="Enter Phone">
+        </td>
+      </tr>
+  </div>
+      <tr>
+        <td>
+          Message:
+      <textarea  cols="30" rows="8" placeholder="Write Message" required></textarea>    
+       <br><br>
+        </td>
+      </tr>
       
-        <input type="text" id="username" name="username" placeholder="enter username" ><img src="./images/user.png" alt="" width="20px"><br>
-    
-        <input type="password" id="password" name="password" placeholder="enter password"><img src="./images/lock.png" alt="" width="20px"><br><br>
-    <div class="btn">
-        <button> 
-            submit
-        </button>
-    </div>
+      <tr>
+      
+          <td colspan="2" align="center">
+            <a href="skills.html"><input type="submit"  id="submitbtn"></a>
+          </td>
+        </tr>
+  
+  
+    </table>
+  </form>
+  
+
+        </div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/asadjn99"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/asadjn99/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/asadjn99"><i class="fa-brands fa-facebook"></i></a>
+            <a href="mailto:asad.jn99@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://wa.me/923075993029?text="><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
         
-    </form>
-</div>
+    </div>
 
-
-    <!-- written with chat -->
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Retrieve username and password
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-
-            // Check if username and password match the desired values
-            if (username === "asadjn" && password === "asadjn99") {
-                // Redirect to index.html
-                window.location.href = "login.html";
-            } else {
-                // Handle incorrect username/password
-                alert("Incorrect username or password!");
-            }
-        });
-    </script>
 </body>
 </html>

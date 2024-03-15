@@ -5,30 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ByteBrilliance</title>
   <style>
-    /* CSS for header navigation */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      border-radius: 15px;
-      background-color: teal;
-      color: #fff;
-  }
-  nav ul {
-    list-style-type: none;
-    margin: 0;
+*{
     padding: 0;
-  }
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  nav ul li a {
-    color: #fff;
+    margin: 0;
+}
+
+nav{
+    width: 84%;
+    margin: auto;
+    padding: 20PX 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
     text-decoration: none;
-    padding: 8px 12px; /* Add padding to make the clickable area larger */
-    border-radius: 5px; /* Add border radius for rounded corners */
+    color: #606163;
+}
+nav ul li a:hover{
+    color: #f79420;
+
+}
+
+
+
+.social-media{
+    margin-left: 8%;
+    margin-top: 0px;
+}
+
+.social-media a{
+    font-size: 25px;
+    color: #f79420;
+    margin-top: 15px;
+    margin: 10px 5px;
+
+    
+}
+table{
+    
+    margin-top: 100px;
+    margin-left: 40%;
+    background-color: lightslategray;
+    color: rgb(20, 19, 19);
+    border-radius: 10px;
+    height: 170px;
+    width: 250px;
+    
+  }
+
+.box{
+    height: 20px;
+}
+
+#submitbtn{
+    color: #ffffff;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #355449;
+    height: 25px;
+    
   }
   table {
     border-collapse: collapse;
@@ -46,28 +91,24 @@
     background-color:  rgb(142, 161, 161);
   }
  
-  nav ul li a[href="login.html"] { background-color: #1796e5; }
-  nav ul li a[href="education.html"] { background-color: #1796e5; }
-  nav ul li a[href="projects.html"] { background-color: #0c2636; }
-  nav ul li a[href="skills.html"] { background-color: #1796e5; }
-  nav ul li a[href="contact.html"] { background-color: #1796e5; }
  
   </style>
 </head>
 
 <body style="background-color: aliceblue;">
   <header>
-    <h1 style="color: white;">Welcome to My Portfolio</h1>
     <nav>
+      <img src="./images/logo.png" alt="my_logo" class="logo" width="60PX">
       <ul>
-        <li><a href="login.html">Home</a></li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        
+          <li><a href="index1.html">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="projects.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="skills.html">SKILLS</a></li>
+          
       </ul>
-    </nav>
+  </nav>
   </header>
 <br>
 <br>
@@ -96,7 +137,53 @@
 
 
     
-
+        <form action="contact.html">
+          <table  align="center" cellspacing="3px">
+        
+            <div>
+            <tr>
+              <td>
+                Full Name:<input type="text" placeholder="Enter Name" required></td></tr>
+            <tr>
+              <td>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="Enter Email" required>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" placeholder="Enter Phone">
+              </td>
+            </tr>
+        </div>
+            <tr>
+              <td>
+                Message:
+            <textarea  cols="30" rows="8" placeholder="Write Message" required></textarea>    
+             <br><br>
+              </td>
+            </tr>
+            
+            <tr>
+            
+                <td colspan="2" align="center">
+                  <a href="skills.html"><input type="submit"  id="submitbtn"></a>
+                </td>
+              </tr>
+        
+        
+          </table>
+        </form>
+        
+      
+              </div>
+              <div class="social-media">
+                  <a href="https://www.linkedin.com/in/asadjn99"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="https://www.instagram.com/asadjn99/"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/asadjn99"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="mailto:asad.jn99@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                  <a href="https://wa.me/923075993029?text="><i class="fa-brands fa-whatsapp"></i></a>
+                  </div>
+              
+          </div>
     
   </body>
   </html>
