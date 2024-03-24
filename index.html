@@ -10,7 +10,9 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
+
 .asad{
     height: 100vh;
     width: 100%;
@@ -111,13 +113,16 @@ span{
     
     margin-top: 100px;
     margin-left: 40%;
-    background-color: lightslategray;
-    color: white;
+    border: 3px solid #f79420;
+    /* background-color: lightslategray; */
+    color: black;
     border-radius: 10px;
     height: 170px;
-    width: 250px;
+    width: 255px;
+    align: justify;
     
   }
+
   /* for bottom  "Designed By ASAD JN" b*/
   .table2{
     background-color: #f79420;
@@ -130,13 +135,14 @@ span{
 
 .box{
     height: 20px;
+    
 }
 
 #submitbtn{
     color: #ffffff;
     font-size: 17px;
     border-radius: 5px;
-    background-color: #355449;
+    background-color: #f79420;
     height: 25px;
     width: 80px;
 
@@ -144,6 +150,21 @@ span{
 #location{
     margin: 200px 20px;
 
+}
+table.tablefooter{
+
+    border-collapse: collapse;
+  
+    width: 100%;
+    background: rgb(194, 191, 191);
+
+} 
+#tr1{
+    color: #f79420;
+    
+}
+#tr2{
+    color: white;
 }
 
 </style>
@@ -187,19 +208,20 @@ span{
         <iframe src="https://www.google.com/maps/d/embed?mid=10Dg861xJNy18dTvB6dHk9fp8dRQ&hl=en_US&ehbc=2E312F" width="300" height="200" id="location"></iframe>
 
   <form action="contact.html">
-    <table  align="center" cellspacing="3px" class="table1">
+    <table  align="center" cellspacing="5px" class="table1">
   
       <div>
       <tr>
-        <td>
-          Full Name:<input type="text" placeholder="Enter Name" required></td></tr>
+        <td id="table1nep">
+          Full Name:<input type="text" placeholder="Enter Name" required>
+        </td></tr>
       <tr>
-        <td>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" placeholder="Enter Email" required>
+        <td id="table1nep">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="email" placeholder="Enter Email" required>
         </td>
       </tr>
       <tr>
-        <td>
-          Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="tel" placeholder="Enter Phone">
+        <td id="table1nep">
+          Phone: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="tel" placeholder="Enter Phone">
         </td>
       </tr>
   </div>
@@ -232,13 +254,61 @@ span{
             <a href="https://wa.me/923075993029?text="><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         
-    </div>
-    <div>
+    <!-- </div>
+<table class="tablefooter">
+    
+<tr>
+    <th  id="tr1">Quick Links</th>
+    <td></td>
+    
+    <td></td>
+    <td></td>
+    <td></td>
+ 
+</tr>
+
+<tr>
+    
+    <td  id="tr2"><a href="index.html">HOME</a></td>
+</tr>
+
+<tr>
+    <td  id="tr2"><a href="">ABOUT</a></td>
+</tr>
+
+<tr>
+    <td><a href="education.html">EDUCATION</a></td>
+</tr>
+<tr>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+</tr>
+<tr>
+    <td>CONTACT</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+</tr>
+<tr>
+    <td>SKILLS</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+    <td>PORTFOLIO</td>
+</tr>
+
+
+</table> -->
+  
     <table class="table2">
         <tr>
             <td><span id="span2">DESIGNED BY </span><b>ASAD-JN</b> <span id="span2">WITH</span> &hearts;</td>
         </tr>
     </table>
-    </div>
+    
 </body>
 </html>
